@@ -12,7 +12,7 @@ impl CanSlice for String {
         let mut range_counter = 0;
         let mut string_buffer: String = "".to_string();
 
-        for c in self.to_string().chars() {
+        for c in self.chars() {
 
             if range_counter < range_start {
                 range_counter += 1;
